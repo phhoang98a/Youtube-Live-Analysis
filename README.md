@@ -8,7 +8,9 @@ Crawl live chat comments from a live YouTube video, analyze their sentiment, and
 <img src="https://github.com/user-attachments/assets/6f341224-3cb6-4d82-9a34-42cca89f2d98" height=100 />
 <img src="https://github.com/user-attachments/assets/7b8cad2a-a5d8-4c64-99de-839a70ba44c2" height=100 />
 <img src="https://github.com/user-attachments/assets/c0841552-e117-4b18-8e99-4225effe8602" height=100 />
+<img src="https://github.com/user-attachments/assets/7d8fe2ef-4723-4aeb-8da4-3bd6541651e9" height=100 />
 <img src="https://github.com/user-attachments/assets/20af4151-275c-4b09-ad63-974afa3cacc7" height=100 />
+<img src="https://github.com/user-attachments/assets/3425fd8e-1aea-4085-a784-6c4c603d33d5" height=100 />
 
 ## Architecture
 ![Diagram drawio (1)](https://github.com/user-attachments/assets/2689e492-eadb-49b9-9c98-f9cc69fe61c8)
