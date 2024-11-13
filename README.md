@@ -7,7 +7,6 @@ Crawl live chat comments from a live YouTube video, analyze their sentiment, and
 <img src="https://github.com/user-attachments/assets/73eea9d1-ce9d-4488-9729-b1e37bf06d16" height=100 />
 <img src="https://github.com/user-attachments/assets/6f341224-3cb6-4d82-9a34-42cca89f2d98" height=100 />
 <img src="https://github.com/user-attachments/assets/7b8cad2a-a5d8-4c64-99de-839a70ba44c2" height=100 />
-<img src="https://github.com/user-attachments/assets/c28b51ed-9381-496d-a3ee-28e04fe64bfb" height=100 />
 <img src="https://github.com/user-attachments/assets/c0841552-e117-4b18-8e99-4225effe8602" height=100 />
 <img src="https://github.com/user-attachments/assets/20af4151-275c-4b09-ad63-974afa3cacc7" height=100 />
 
