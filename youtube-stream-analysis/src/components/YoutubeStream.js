@@ -3,17 +3,19 @@ import io from 'socket.io-client';
 
 const VideoStream = () => {
   const [imageSrc, setImageSrc] = useState(null);
-  
+
   useEffect(() => {
-    // Connect to Socket.IO server
-    const socket = io('http://localhost:5050');
+    const socket = io('http://localhost:5050', { transports: ["websocket"] });
 
     // Listen for incoming frames
     socket.on('video_frame', (frameData) => {
       setImageSrc(`data:image/jpeg;base64,${frameData}`);
     });
 
-    // Cleanup on component unmount
+    socket.on('connect_error', (error) => {
+      console.error("Connection error:", error);
+    });
+
     return () => socket.disconnect();
   }, []);
 

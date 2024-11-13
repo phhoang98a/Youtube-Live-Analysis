@@ -50,7 +50,6 @@ def send_data(messages):
             producer.flush()
         except Exception as e:
             print(f"An error occurred: {e}")
-        print(f"{author}: {text}")
 
 def monitor_live_chat(api_key, video_id, interval=5):
     live_chat_id = get_live_chat_id(api_key, video_id)
@@ -64,5 +63,4 @@ def monitor_live_chat(api_key, video_id, interval=5):
         send_data(messages)
         time.sleep(interval)
 
-# Run the live chat monitor
 monitor_live_chat(API_KEY, VIDEO_ID, interval=5)

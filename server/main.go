@@ -46,7 +46,6 @@ func main() {
 		c.Set("Cache-Control", "no-cache")
 		c.Set("Connection", "keep-alive")
 
-		// Use SetBodyStreamWriter with fasthttp.StreamWriter
 		c.Context().SetBodyStreamWriter(func(w *bufio.Writer) {
 			// Watch for changes in MongoDB collection
 			changeStream, err := collection.Watch(context.Background(), mongo.Pipeline{})
@@ -73,19 +72,13 @@ func main() {
 						log.Println("Error encoding JSON:", err)
 						continue
 					}
-
 					// Format message for SSE
 					message := fmt.Sprintf("data: %s\n\n", data)
-
-					// Log the message
-					log.Printf("Sending message to client: %s", message)
-
 					// Write the SSE message to the client
 					if _, err := w.Write([]byte(message)); err != nil {
 						log.Println("Error writing to client:", err)
 						return
 					}
-
 					// Flush the message to the client
 					if err := w.Flush(); err != nil {
 						log.Println("Error flushing to client:", err)
@@ -101,6 +94,5 @@ func main() {
 
 		return nil
 	})
-
 	log.Fatal(app.Listen(":3000"))
 }

@@ -52,8 +52,7 @@ def stream_video():
         # Send frame to clients
         sio.emit("video_frame", frame_data)
 
-        # Control frame rate (optional)
-        sio.sleep(1 / 72)  # 30 FPS
+        sio.sleep(1 / 60)  # 60 FPS
 
     cap.release()
     streaming_task_started = False

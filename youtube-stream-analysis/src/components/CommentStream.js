@@ -11,7 +11,6 @@ const CommentStream = () => {
     eventSource.onmessage = function (event) {
       const newData = JSON.parse(event.data);
       setData((prevData) => [...prevData, newData]);
-      console.log("Received data:", newData);
     };
     eventSource.onerror = (error) => {
       console.error('EventSource error:', error);
