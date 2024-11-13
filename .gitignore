@@ -1,0 +1,50 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Output of `go build`
+/bin/
+/build/
+/dist/
+
+# Dependency directories (for vendoring)
+/vendor/
+
+# Go modules
+./server/go.mod
+./server/go.sum
+
+# Ignore environment variables file
+.env
+
+# IDE and editor-specific files
+.idea/
+.vscode/
+*.swp
+
+# Logs and databases
+*.log
+*.out
+
+# macOS specific files
+.DS_Store
+
+# Linux specific files
+*.pid
+
+# Node modules (if your project includes any JavaScript)
+./youtube-stream-analysis/node_modules/
+
+# Temporary files and backups
+*.bak
+*.tmp
+*.backup
+*~
+
+# Ignore binary executable
+run_all.sh
+
+# Ignore Fiber debug file (if you use Fiber's default debug file)
+fiber.debug
