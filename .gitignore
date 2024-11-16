@@ -43,8 +43,5 @@
 *.backup
 *~
 
-# Ignore binary executable
-run_all.sh
-
 # Ignore Fiber debug file (if you use Fiber's default debug file)
 fiber.debug
